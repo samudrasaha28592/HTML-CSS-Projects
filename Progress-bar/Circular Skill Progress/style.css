@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: #0f172a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    color: white;
+}
+
+.container {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+.grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    text-align: center;
+}
+
+svg {
+    width: 120px;
+    height: 120px;
+    transform: rotate(-90deg);
+}
+
+circle {
+    fill: none;
+    stroke-width: 10;
+    cx: 60;
+    cy: 60;
+    r: 50;
+}
+
+.bg {
+    stroke: #1e293b;
+}
+
+.progress {
+    stroke-dasharray: 314;
+    stroke-dashoffset: 314;
+    transition: 2s ease-in-out;
+    stroke-linecap: round;
+}
+
+/* Colors */
+.html {
+    stroke: #ff4d4d;
+}
+
+.css {
+    stroke: #2193b0;
+}
+
+.js {
+    stroke: #f7df1e;
+}
+
+.python {
+    stroke: #3776ab;
+}
+
+.react {
+    stroke: #00d8ff;
+}
+
+span {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    font-weight: bold;
+}
