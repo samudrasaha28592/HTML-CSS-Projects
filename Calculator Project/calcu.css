@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #1e1e2f, #2c2c54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.card {
+    width: 300px;
+    background: #2f2f44;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.card-head input {
+    width: 100%;
+    height: 60px;
+    border: none;
+    outline: none;
+    font-size: 26px;
+    text-align: right;
+    padding: 10px;
+    border-radius: 10px;
+    background: #1e1e2f;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.cal-body div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.btn {
+    width: 60px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    background: #3a3a5c;
+    color: #fff;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #57578a;
+    transform: scale(1.05);
+}
+
+/* Operator buttons */
+.btn[value="+"],
+.btn[value="-"],
+.btn[value="x"],
+.btn[value="/"] {
+    background: #ff9f43;
+}
+
+/* Equal button */
+.btn[value="="] {
+    background: #00c853;
+    width: 60px;
+}
+
+/* Clear button */
+.btn[value="C"] {
+    background: #ff3d00;
+}
+
+/* Delete button */
+.btn[value="DEL"] {
+    background: #d50000;
+}
